@@ -7,6 +7,7 @@
 
 ## おまけ
 - 自動でPDF化するスクリプトもついてます
+- PDF化したファイルをマージするスクリプトもついてます
 
 ## 使い方
 ```powershell
@@ -14,5 +15,8 @@
 python main.py {ダウンロードしたい講義の名前（部分一致可） or URL}
 
 // PDF化スクリプト
-python make_pdf.py {PDF化したいファイルの絶対パス} {PDFの保存先の絶対パス(default="~/Downloads")}
+python make_pdf.py {PDF化したいファイルがあるフォルダの絶対パス} {PDFの保存先の絶対パス(default="~/Downloads")}
+
+// PDFマージスクリプト
+python merge_pdf.py {マージしたいファイルがあるフォルダの絶対パス} {マージしたPDFの保存先の絶対パス(default=元ファイルのフォルダ)}
 ```

@@ -113,7 +113,7 @@ if driver.current_url == f"{base_url}/courses":
     for lecture in lectures:
         print(lecture)
         driver.get(lecture)
-        pages = get_page_list_of_lecture()
+        pages = sorted(get_page_list_of_lecture())
         print("ページ一覧: " + str(pages))
         for page in pages:
             print("現在のページ: " + page)

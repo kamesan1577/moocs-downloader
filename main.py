@@ -2,16 +2,15 @@ from time import sleep
 import os
 import sys
 import subprocess
-import re
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 
 
-INIAD_ID = os.environ.get("INIAD_ID") 
+INIAD_ID = os.environ.get("INIAD_ID")
 INIAD_PW = os.environ.get("INIAD_PW")
-INIAD_CHROME_PROFILE = os.environ.get("INIAD_CHROME_PROFILE") # Chromeのプロフィール名
-CHROME_USER_DATA_PATH = os.environ.get("CHROME_USER_DATA_PATH") # profileフォルダがあるフォルダ
+INIAD_CHROME_PROFILE = os.environ.get("INIAD_CHROME_PROFILE")  # Chromeのプロフィール名
+CHROME_USER_DATA_PATH = os.environ.get("CHROME_USER_DATA_PATH")  # profileフォルダがあるフォルダ
 base_url = "https://moocs.iniad.org"
 chrome_options = Options()
 

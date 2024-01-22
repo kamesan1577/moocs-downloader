@@ -12,7 +12,7 @@
 ## 使い方
 ```powershell
 // ダウンロードスクリプト
-python main.py {ダウンロードしたい講義の名前（部分一致可） or URL}
+python download.py {ダウンロードしたい講義の名前（部分一致可） or URL}
 
 // PDF化スクリプト
 python make_pdf.py {PDF化したいファイルがあるフォルダの絶対パス} {PDFの保存先の絶対パス(default="~/Downloads")}
